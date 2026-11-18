@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+# Makes the upstream code in src/ and the demo library importable:
+#     pip install -e .
+# Dependencies stay in requirements.txt.
+[project]
+name = "rae"
+version = "0.0.0"
+requires-python = ">=3.10"
+
+[tool.setuptools]
+packages = [
+    "stage1", "stage1.decoders", "stage1.encoders",
+    "stage2", "stage2.models", "stage2.transport",
+    "disc", "eval", "utils",
+    "rae_demo",
+]
+py-modules = ["train_stage1"]
+
+[tool.setuptools.package-dir]
+"" = "src"
+rae_demo = "rae_demo"

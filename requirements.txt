@@ -1,10 +1,10 @@
-timm==0.9.16
-accelerate==0.23.0
-torchdiffeq==0.2.5
+timm
+accelerate
+torchdiffeq
 wandb
-transformers==4.56.2
+transformers
 einops
-omegaconf==2.3.0
-numpy==1.26.0
+omegaconf
+numpy
 torchmetrics
 torch-fidelity
